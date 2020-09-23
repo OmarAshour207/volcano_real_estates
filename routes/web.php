@@ -20,6 +20,7 @@ Route::get('properties/search', 'PropertyController@PropertiesSearch');
 
 Route::get('/lang/{language}', 'HomeController@changeLanguage');
 
+Route::match(['get', 'post'], 'webhook', 'MessengerController@index');
 
 // Admin ROUTES
 Auth::routes(['register' => false]);
