@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1257f663-f64a-495c-8f7d-aacfd2c39e22" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MessengerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MessengerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/storage/settings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,6 +190,8 @@
       <workItem from="1600601891124" duration="31538000" />
       <workItem from="1600770246525" duration="2276000" />
       <workItem from="1600786762967" duration="1384000" />
+      <workItem from="1600957960532" duration="856000" />
+      <workItem from="1601202814753" duration="7173000" />
     </task>
     <servers />
   </component>
@@ -205,10 +207,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1600181015213" />
-    <state x="604" y="356" key="NewPhpFileDialog" timestamp="1600614543943">
+    <state x="604" y="356" key="NewPhpFileDialog" timestamp="1601204152674">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="604" y="356" key="NewPhpFileDialog/0.0.1536.864@0.0.1536.864" timestamp="1600614543943" />
+    <state x="604" y="356" key="NewPhpFileDialog/0.0.1536.864@0.0.1536.864" timestamp="1601204152674" />
     <state x="465" y="256" key="com.intellij.ide.util.TipDialog" timestamp="1600770811790">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -217,9 +219,9 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="425" y="197" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1600772381632" />
-    <state x="425" y="85" width="672" height="676" key="search.everywhere.popup" timestamp="1600185565154">
+    <state x="425" y="85" width="672" height="676" key="search.everywhere.popup" timestamp="1601204837169">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="425" y="85" width="672" height="676" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1600185565154" />
+    <state x="425" y="85" width="672" height="676" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1601204837169" />
   </component>
 </project>

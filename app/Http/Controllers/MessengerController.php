@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Property;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Cache;
 
 class MessengerController extends Controller
 {
@@ -22,10 +25,21 @@ class MessengerController extends Controller
         }
         $user    = json_decode($this->getUser($id));
 
-        if ($message == 'main_menu') {
+        Cache::get('lang') == '' ? Cache::put('lang', 'ar', Carbon::tomorrow()) : '';
+        $lang = Cache::get('lang');
+
+        if ($message == __('bot.' . $lang . '.main_menu')) {
             $response = $this->mainMenu($id, $user);
-        } elseif($message == 'visit-website') {
+        } elseif($message == __('bot.' . $lang . '.visit_website')) {
             $response = $this->visitWebsite($id);
+        } elseif ($message == 'ar' || $message == 'en') {
+            $response = $this->switchLang($id, $message, $user);
+        } elseif ($message == __('bot.' . $lang . '.properties')) {
+            $response = $this->showProperties($id, 1);
+        } elseif ($message == __('bot.' . $lang . '.villa')) {
+            $response = $this->showProperties($id, 2);
+        } elseif ($message == __('bot.' . $lang . '.chalet')) {
+            $response = $this->showProperties($id, 3);
         } else {
             $response = $this->mainMenu($id, $user);
         }
@@ -33,30 +47,45 @@ class MessengerController extends Controller
         $this->sendMessage($response);
     }
 
+    public function switchLang($id, $message, $user)
+    {
+        Cache::put('lang', $message, Carbon::tomorrow());
+        return $this->mainMenu($id, $user);
+    }
+
     public function mainMenu($id, $user)
     {
+        $lang = Cache::get('lang');
         return [
             'recipient' => ['id' => $id ],
             'messaging_type' => 'RESPONSE',
             'message'  => [
-                'text' => "Welcome {$user->first_name}",
+                'text' => __('bot.' . $lang . '.welcome') . $user->first_name,
                 'quick_replies' => [
                     [
                         "content_type" => "text",
-                        "title" => "properties",
-                        "payload" => "http://monraytravel.com/appointments"
+                        "title" => __('bot.' . $lang . '.properties'),
+                        "payload" => "http://monraytravel.com?type=1"
                     ], [
                         "content_type" => "text",
-                        "title" => "villa",
-                        "payload" => "http://monraytravel.com/appointments"
+                        "title" => __('bot.' . $lang . '.villa'),
+                        "payload" => "http://monraytravel.com?type=2"
                     ], [
                         "content_type" => "text",
-                        "title" => "chalet",
-                        "payload" => "http://monraytravel.com/appointments"
+                        "title" => __('bot.' . $lang . '.chalet'),
+                        "payload" => "http://monraytravel.com?type=3"
                     ], [
                         "content_type" => "text",
-                        "title" => "visit-website",
-                        "payload" => "http://monraytravel.com/appointments"
+                        "title" => __('ar'),
+                        "payload" => "http://monraytravel.com/lang/ar"
+                    ], [
+                        "content_type" => "text",
+                        "title" => __('en'),
+                        "payload" => "http://monraytravel.com/lang/en"
+                    ], [
+                        "content_type" => "text",
+                        "title" => __('bot.' . $lang . '.visit_website'),
+                        "payload" => "http://monraytravel.com"
                     ]
                 ]
             ]
@@ -65,6 +94,7 @@ class MessengerController extends Controller
 
     public function visitWebsite($id)
     {
+        $lang = Cache::get('lang');
         return [
             'recipient' => ['id' => $id ],
             'message'  => [
@@ -74,7 +104,7 @@ class MessengerController extends Controller
                         'template_type' => 'generic',
                         'elements'  => [
                             [
-                                'title'     => 'Welcome',
+                                'title'     => __('bot.' . $lang . '.welcome'),
                                 'image_url' => 'https://petersfancybrownhats.com/company_image.png',
                                 'subtitle'  => 'Hello for everyone',
                                 'default_action' => [
@@ -85,11 +115,11 @@ class MessengerController extends Controller
                                     [
                                         'type'  => 'web_url',
                                         'url'   => 'http://monraytravel.com',
-                                        'title' => 'visit-website'
+                                        'title' => __('bot.' . $lang . '.visit_website')
                                     ], [
                                         'type'  => 'postback',
-                                        'payload'   => 'main_menu',
-                                        'title' => 'Main Menu'
+                                        'payload'   => __('bot.' . $lang . '.main_menu'),
+                                        'title' => __('bot.' . $lang . '.main_menu')
                                     ]
                                 ]
                             ]
@@ -98,6 +128,52 @@ class MessengerController extends Controller
                 ]
             ]
         ];
+    }
+
+    public function showProperties($id, $type)
+    {
+        $lang = Cache::get('lang');
+        $properties = Property::where('type', $type)->limit(7)->get()->toArray();
+
+        $temp = [];
+        for ($i = 0; $i < count($properties); $i++) {
+            array_push($temp,
+                [
+                    'title' => $properties[$i][$lang. '_name'],
+                    'subtitle' => $properties[$i][$lang .'_description'],
+                    "image_url" => "https://image.shutterstock.com/image-vector/coffee-cup-icon-vector-symbol-600w-1082019227.jpg",
+                    'default_action' => [
+                        "type" => "web_url",
+                        "url" => "https://91a105edf6b8.ngrok.io/",
+                        "webview_height_ratio" => "tall"
+                    ],
+                    'buttons' => [
+                        [
+                            "type" => "web_url",
+                            "url" => "http://moonraytravel.com/{$properties[$i]['id']}/{$properties[$i][$lang . '_name']}",
+                            "title" => __('bot.'. $lang . '.view_details'),
+                        ], [
+                            "type" => "postback",
+                            "payload" => __('bot.'. $lang .'.main_menu'),
+                            "title" => __('bot.'. $lang .'.main_menu'),
+                        ]
+                    ]
+                ]);
+        }
+
+        return
+            [
+                'recipient' => ['id' => $id ],
+                'message' => [
+                    'attachment' => [
+                        'type' => 'template',
+                        'payload' => [
+                            'template_type' => 'generic',
+                            'elements' => $temp,
+                        ]
+                    ]
+                ]
+            ];
     }
 
     protected function getUser($id = null)
