@@ -2,39 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6333909a-52dc-4bda-8005-fbb1238e4145" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/hotel.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/ar/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/admin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/ar/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/ar/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/en/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/abouts/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/abouts/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/blogs/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/blogs/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/contacts/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/contacts/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/contactus/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/contactus/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/projects/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/projects/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/properties/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/properties/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/services/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/services/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/slider/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/slider/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/team-members/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/team-members/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/testimonials/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/testimonials/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/themes/eighth.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/themes/fifth.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/themes/fourth.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/themes/second.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/themes/seventh.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/themes/sixth.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/themes/third.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/site/first/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/first/about.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/site/first/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/first/contact.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/site/first/blogs.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/first/blogs.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/site/first/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/first/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/site/first/layouts/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/first/layouts/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/site/first/services.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/site/first/services.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/storage/settings.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +162,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604248538452</updated>
-      <workItem from="1604248539668" duration="6484000" />
+      <workItem from="1604248539668" duration="6672000" />
     </task>
     <servers />
   </component>

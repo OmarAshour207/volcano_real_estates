@@ -553,7 +553,11 @@
                                                 </h5>
                                                 <p>{{ date('d,M Y', strtotime($blog->create_at)) }}</p>
                                             </div>
-                                            {!! $blog->$content !!}
+                                            @if (session('lang') == 'ar')
+                                                {!! mb_substr($blog->$content, 0, 130) !!}
+                                            @else
+                                                {!! substr($blog->$content, 0, 130) !!}
+                                            @endif
                                             <a class="read-more" href="{{ url('blogs/'. $blog->id. '/' . $blog->$title) }}">
                                                 {{ __('home.read_more') }}
                                             </a>
