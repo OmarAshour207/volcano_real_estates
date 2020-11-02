@@ -425,7 +425,7 @@
                                             <div class="agent-info">
                                                 <div class="agent-name">
                                                     <h5>
-                                                        <a href="{{ $teamMember->$name }}"></a>
+                                                        <a href="{{ $teamMember->$name }}">{{ $teamMember->$name }}</a>
                                                     </h5>
                                                     <p>{{ $teamMember->$title }}</p>
                                                 </div>

@@ -43,7 +43,7 @@ return [
     'instagram'             => 'الأنستغرام',
     'twitter'               => 'تويتر',
     'projects'              => 'المشاريع',
-    'project'               => 'المشورع',
+    'project'               => 'المشروع',
     'ar_name'               => 'الأسم بالعربيه',
     'en_name'               => 'الأسم بالانجليزيه',
     'ar_description'        => 'الوصف بالعربي',

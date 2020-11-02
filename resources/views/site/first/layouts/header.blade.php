@@ -70,10 +70,6 @@
                                 </li>
 
                                 <li>
-                                    <a href="{{ url('projects') }}">{{ __('home.projects') }}</a>
-                                </li>
-
-                                <li>
                                     <a href="{{ url('blogs') }}">{{ __('home.blogs') }}</a>
                                 </li>
 
@@ -84,14 +80,19 @@
                                 <li>
                                     <a href="{{ url('contact-us') }}">{{ __('admin.contact_us') }}</a>
                                 </li>
-
-                                <li>
-                                    <a href="#">{{ __('home.language') }}</a>
-                                    <ul class="drop-menu">
-                                        <li><a href="{{ url('lang/ar') }}">{{ __('home.arabic') }}</a></li>
-                                        <li><a href="{{ url('lang/en') }}">{{ __('home.english') }}</a></li>
-                                    </ul>
-                                </li>
+                                @if(session('lang') == 'ar')
+                                    <li>
+                                        <a href="{{ url('lang/en') }}">
+                                            {{ __('home.english') }}
+                                        </a>
+                                    </li>
+                                @else
+                                    <li>
+                                        <a href="{{ url('lang/ar') }}">
+                                            {{ __('home.arabic') }}
+                                        </a>
+                                    </li>
+                                @endif
 
                             </ul>
                         </nav>

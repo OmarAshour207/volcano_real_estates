@@ -37,7 +37,7 @@
                                   $desc = session('lang') . '_description';
                                 @endphp
                                 <p>
-                                    {{ $contactUs->$desc }}
+                                    {!! $contactUs->$desc !!}
                                 </p>
                             </div>
                             <ul class="contact-address">

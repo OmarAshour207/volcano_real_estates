@@ -8,7 +8,7 @@ return [
     'blogs'                 => 'المقالات',
     'language'              => 'اللغه',
     'arabic'                => 'العربيه',
-    'english'               => 'الأنجليزيه',
+    'english'               => 'En',
     'read_more'             => 'أقرا المزيد',
     'why_love_us'           => 'لماذا يحبنا العميل',
     'choose_us'             => 'أخترنا',

@@ -33,7 +33,7 @@
                                 </div>
                             </th>
 
-                            <th style="width: 30px;" > {{ trans('admin.id') }} </th>
+                            <th style="width: 30px;"> {{ trans('admin.id') }} </th>
                             <th style="width: 40px;"> {{ trans('admin.ar_name') }} </th>
                             <th style="width: 40px;"> {{ trans('admin.en_name') }} </th>
                             <th style="width: 40px;"> {{ trans('home.type') }} </th>
@@ -41,8 +41,8 @@
                             <th style="width: 40px;"> {{ trans('admin.status') }} </th>
                             <th style="width: 40px;"> {{ trans('admin.price') }} </th>
                             <th style="width: 40px;"> {{ trans('admin.state') }} </th>
-                            <th style="width: 120px;" >{{ trans('admin.image') }}</th>
-                            <th style="width: 30px;" > {{ trans('admin.action') }} </th>
+                            <th style="width: 120px;"> {{ trans('admin.image') }}</th>
+                            <th style="width: 30px;"> {{ trans('admin.action') }} </th>
                         </tr>
                         </thead>
                         <tbody class="list" id="companies">
@@ -62,7 +62,7 @@
                                     <td style="width: 40px;">
                                         <div class="d-flex align-items-center">
                                             <div class="d-flex align-items-center">
-                                                {{ $property->ar_name }}
+                                                {{ mb_substr($property->ar_name, 0, 20) }}
                                             </div>
                                         </div>
                                     </td>
@@ -70,22 +70,26 @@
                                     <td style="width: 40px;">
                                         <div class="d-flex align-items-center">
                                             <div class="d-flex align-items-center">
-                                                {{ $property->en_name }}
+                                                {{ substr($property->en_name, 0, 20) }}
                                             </div>
                                         </div>
                                     </td>
 
                                     <td style="width: 40px;">
                                         <div class="d-flex align-items-center">
-                                            <div class="d-flex align-items-center">
-                                                @if ($property->type == 1)
+                                            @if ($property->type == 1)
+                                                <div class="d-flex align-items-center btn btn-info">
                                                     {{ __('home.property') }}
-                                                @elseif ($property->type == 2)
+                                                </div>
+                                            @elseif ($property->type == 2)
+                                                <div class="d-flex align-items-center btn btn-warning">
                                                     {{ __('home.villa') }}
-                                                @else
+                                                </div>
+                                            @else
+                                                <div class="d-flex align-items-center btn btn-danger">
                                                     {{ __('admin.chalet') }}
-                                                @endif
-                                            </div>
+                                                </div>
+                                            @endif
                                         </div>
                                     </td>
 
@@ -99,7 +103,7 @@
 
                                     <td style="width: 40px;">
                                         <div class="d-flex align-items-center">
-                                            <div class="d-flex align-items-center">
+                                            <div class="d-flex align-items-center btn btn-{{ $property->status == 0 ? 'info' : 'success'}}">
                                                 {{ $property->status == 0 ? __('admin.rent') : __('home.sale') }}
                                             </div>
                                         </div>

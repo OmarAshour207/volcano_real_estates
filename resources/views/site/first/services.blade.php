@@ -117,14 +117,7 @@
                                     </h2>
                                     <p>{{ __('home.complete_projects') }}</p>
                                 </div>
-                                <!-- counter-item -->
-                                <div class="counter-item">
-                                    <h2>
-                                        <i class="fa fa-key" aria-hidden="true"></i>
-                                        <span class="counter">555</span>
-                                    </h2>
-                                    <p>Property Sold</p>
-                                </div>
+
                                 <!-- counter-item -->
                                 <div class="counter-item">
                                     <h2>

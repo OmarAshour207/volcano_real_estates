@@ -81,7 +81,7 @@
                             <td style="width:120px" class="text-center">
                                 <div class="d-flex align-items-center">
                                     <div class="d-flex align-items-center">
-                                        {{ $contact->message }}
+                                        {{ substr($contact->message, 0, 20) }}
                                     </div>
                                 </div>
                             </td>
