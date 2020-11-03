@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 27, 2020 at 12:06 PM
+-- Generation Time: Nov 03, 2020 at 01:45 PM
 -- Server version: 10.4.13-MariaDB
 -- PHP Version: 7.4.8
 
@@ -43,7 +43,7 @@ CREATE TABLE `abouts` (
 --
 
 INSERT INTO `abouts` (`id`, `ar_title`, `en_title`, `ar_description`, `en_description`, `image`, `created_at`, `updated_at`) VALUES
-(1, 'عننا', 'About Us', 'About Us Desc in ar', 'About Us Desc in en', NULL, '2020-09-21 12:05:31', '2020-09-21 12:05:31');
+(1, 'عننا', 'About Us', 'الوصف عننا بالعربيه الوصف عننا بالعربيه الوصف عننا بالعربيه الوصف عننا بالعربيه الوصف عننا بالعربيه الوصف عننا بالعربيه الوصف عننا بالعربيه الوصف عننا بالعربيه الوصف عننا بالعربيه الوصف عننا بالعربيه الوصف عننا بالعربيه الوصف عننا بالعربيه الوصف عننا بالعربيه الوصف عننا بالعربيه', 'About Us Desc in english About Us Desc in english About Us Desc in english About Us Desc in english About Us Desc in english About Us Desc in english About Us Desc in english About Us Desc in english About Us Desc in english', 'p3GWDh99SD4HLcMvpr3ILWAby3JHt0c5J86RODGj.png', '2020-09-21 12:05:31', '2020-11-02 08:19:23');
 
 -- --------------------------------------------------------
 
@@ -65,6 +65,16 @@ CREATE TABLE `blogs` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `blogs`
+--
+
+INSERT INTO `blogs` (`id`, `ar_author`, `en_author`, `ar_title`, `en_title`, `ar_content`, `en_content`, `ar_meta_tag`, `en_meta_tag`, `image`, `created_at`, `updated_at`) VALUES
+(1, 'أسم المؤلف بالعربيه', 'name in eblgish', 'اللقب بالعربيه', 'title in english for blog', '<p>المحتوي بالعربيه&nbsp;المحتوي بالعربيه&nbsp;المحتوي بالعربيه&nbsp;المحتوي بالعربيه&nbsp;المحتوي بالعربيه&nbsp;المحتوي بالعربيه&nbsp;المحتوي بالعربيه&nbsp;المحتوي بالعربيه&nbsp;المحتوي بالعربيه&nbsp;المحتوي بالعربيه&nbsp;المحتوي بالعربيه&nbsp;</p>', '<p>content in english&nbsp;content in english&nbsp;content in english&nbsp;content in english&nbsp;content in english&nbsp;content in english&nbsp;content in english&nbsp;content in english&nbsp;content in english&nbsp;content in english&nbsp;content in english&nbsp;content in english&nbsp;</p>', 'Exercitationem persp', 'Aut dolorem nulla et', 'stJHzG48JLulTVjrEgopwjKftbwOKHh7KaNrv11I.jpeg', '2020-11-02 08:29:01', '2020-11-02 08:29:01'),
+(2, 'أسم المؤلف بالعربيه', 'name in eblgish', 'اللقب بالعربيه', 'title in english for blog', '<p>المحتوي بالعربيه&nbsp;المحتوي بالعربيه&nbsp;المحتوي بالعربيه&nbsp;المحتوي بالعربيه&nbsp;المحتوي بالعربيه&nbsp;المحتوي بالعربيه&nbsp;المحتوي بالعربيه&nbsp;المحتوي بالعربيه&nbsp;المحتوي بالعربيه&nbsp;المحتوي بالعربيه&nbsp;المحتوي بالعربيه&nbsp;</p>', '<p>content in english&nbsp;content in english&nbsp;content in english&nbsp;content in english&nbsp;content in english&nbsp;content in english&nbsp;content in english&nbsp;content in english&nbsp;content in english&nbsp;content in english&nbsp;content in english&nbsp;content in english&nbsp;</p>', 'Exercitationem persp', 'Aut dolorem nulla et', 'stJHzG48JLulTVjrEgopwjKftbwOKHh7KaNrv11I.jpeg', '2020-11-02 08:29:01', '2020-11-02 08:29:01'),
+(3, 'أسم المؤلف بالعربيه', 'name in eblgish', 'اللقب بالعربيه', 'title in english for blog', '<p>المحتوي بالعربيه&nbsp;المحتوي بالعربيه&nbsp;المحتوي بالعربيه&nbsp;المحتوي بالعربيه&nbsp;المحتوي بالعربيه&nbsp;المحتوي بالعربيه&nbsp;المحتوي بالعربيه&nbsp;المحتوي بالعربيه&nbsp;المحتوي بالعربيه&nbsp;المحتوي بالعربيه&nbsp;المحتوي بالعربيه&nbsp;</p>', '<p>content in english&nbsp;content in english&nbsp;content in english&nbsp;content in english&nbsp;content in english&nbsp;content in english&nbsp;content in english&nbsp;content in english&nbsp;content in english&nbsp;content in english&nbsp;content in english&nbsp;content in english&nbsp;</p>', 'Exercitationem persp', 'Aut dolorem nulla et', 'stJHzG48JLulTVjrEgopwjKftbwOKHh7KaNrv11I.jpeg', '2020-11-02 08:29:01', '2020-11-02 08:29:01'),
+(4, 'أسم المؤلف بالعربيه', 'name in eblgish', 'اللقب بالعربيه', 'title in english for blog', '<p>المحتوي بالعربيه&nbsp;المحتوي بالعربيه&nbsp;المحتوي بالعربيه&nbsp;المحتوي بالعربيه&nbsp;المحتوي بالعربيه&nbsp;المحتوي بالعربيه&nbsp;المحتوي بالعربيه&nbsp;المحتوي بالعربيه&nbsp;المحتوي بالعربيه&nbsp;المحتوي بالعربيه&nbsp;المحتوي بالعربيه&nbsp;</p>', '<p>content in english&nbsp;content in english&nbsp;content in english&nbsp;content in english&nbsp;content in english&nbsp;content in english&nbsp;content in english&nbsp;content in english&nbsp;content in english&nbsp;content in english&nbsp;content in english&nbsp;content in english&nbsp;</p>', 'Exercitationem persp', 'Aut dolorem nulla et', 'stJHzG48JLulTVjrEgopwjKftbwOKHh7KaNrv11I.jpeg', '2020-11-02 08:29:01', '2020-11-02 08:29:01');
 
 -- --------------------------------------------------------
 
@@ -108,7 +118,7 @@ CREATE TABLE `contactuses` (
 --
 
 INSERT INTO `contactuses` (`id`, `ar_description`, `en_description`, `created_at`, `updated_at`) VALUES
-(1, '<h2>Sed aliquid cum non .</h2>', '<h2>Quis non magni non d.</h2>', '2020-09-21 12:51:26', '2020-09-21 15:35:49');
+(1, '<h2>أتصل بنا بالعربيه ..</h2>', '<h2>Quis non magni non d.</h2>', '2020-09-21 12:51:26', '2020-11-02 08:27:32');
 
 -- --------------------------------------------------------
 
@@ -216,6 +226,13 @@ CREATE TABLE `projects` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Dumping data for table `projects`
+--
+
+INSERT INTO `projects` (`id`, `ar_title`, `en_title`, `ar_description`, `en_description`, `ar_meta_tag`, `en_meta_tag`, `image`, `created_at`, `updated_at`) VALUES
+(1, 'اللقب بالعربيه للمشروع', 'Maia Hubbard', 'الوصف بالعربيه الوصف بالعربيه الوصف بالعربيه الوصف بالعربيه الوصف بالعربيه الوصف بالعربيه الوصف بالعربيه الوصف بالعربيه الوصف بالعربيه الوصف بالعربيه الوصف بالعربيه الوصف بالعربيه الوصف بالعربيه الوصف بالعربيه الوصف بالعربيه الوصف بالعربيه', 'english description english description english description english description english description english description english description english description english description english description english description', 'Lorem quia non Nam q', 'Laboris esse amet', 'U1KXDxn1pHVJm7QJ4ZXNc6PX8x8ELI8dMztLvnU9.png', '2020-11-02 07:44:37', '2020-11-02 07:44:37');
+
 -- --------------------------------------------------------
 
 --
@@ -250,11 +267,11 @@ CREATE TABLE `properties` (
 
 INSERT INTO `properties` (`id`, `ar_name`, `en_name`, `ar_description`, `en_description`, `type`, `area`, `status`, `price`, `ar_meta`, `en_meta`, `ar_address`, `en_address`, `latitude`, `longitude`, `state_id`, `image`, `created_at`, `updated_at`) VALUES
 (1, 'Nora Lindsey', 'Clinton Donovan', 'Ad aperiam similique', 'Quidem sed eos incid', 1, '120', 1, '535.00', NULL, NULL, 'Non aspernatur tempo', 'Labore voluptas sequ', NULL, NULL, 1, 'z8BhffvQ3LBx7oVxsERPK4KNvsxznloHGNtw8L12.jpeg', '2020-09-21 12:05:34', '2020-09-21 12:13:12'),
-(2, 'Nora Lindsey', 'Clinton Donovan', 'Ad aperiam similique', 'Quidem sed eos incid', 1, '120', 1, '535.00', NULL, NULL, 'Non aspernatur tempo', 'Labore voluptas sequ', NULL, NULL, 1, 'z8BhffvQ3LBx7oVxsERPK4KNvsxznloHGNtw8L12.jpeg', '2020-09-21 12:05:34', '2020-09-21 12:13:12'),
-(3, 'Nora Lindsey', 'Clinton Donovan', 'Ad aperiam similique', 'Quidem sed eos incid', 2, '120', 1, '535.00', NULL, NULL, 'Non aspernatur tempo', 'Labore voluptas sequ', NULL, NULL, 1, 'z8BhffvQ3LBx7oVxsERPK4KNvsxznloHGNtw8L12.jpeg', '2020-09-21 12:05:34', '2020-09-21 12:13:12'),
-(4, 'Nora Lindsey', 'Clinton Donovan', 'Ad aperiam similique', 'Quidem sed eos incid', 2, '120', 1, '535.00', NULL, NULL, 'Non aspernatur tempo', 'Labore voluptas sequ', NULL, NULL, 1, 'z8BhffvQ3LBx7oVxsERPK4KNvsxznloHGNtw8L12.jpeg', '2020-09-21 12:05:34', '2020-09-21 12:13:12'),
-(5, 'Nora Lindsey', 'Clinton Donovan', 'Ad aperiam similique', 'Quidem sed eos incid', 3, '120', 1, '535.00', NULL, NULL, 'Non aspernatur tempo', 'Labore voluptas sequ', NULL, NULL, 1, 'z8BhffvQ3LBx7oVxsERPK4KNvsxznloHGNtw8L12.jpeg', '2020-09-21 12:05:34', '2020-09-21 12:13:12'),
-(6, 'Nora Lindsey', 'Clinton Donovan', 'Ad aperiam similique', 'Quidem sed eos incid', 3, '120', 1, '535.00', NULL, NULL, 'Non aspernatur tempo', 'Labore voluptas sequ', NULL, NULL, 1, 'z8BhffvQ3LBx7oVxsERPK4KNvsxznloHGNtw8L12.jpeg', '2020-09-21 12:05:34', '2020-09-21 12:13:12');
+(2, 'Nora Lindsey', 'Clinton Donovan', 'Ad aperiam similique', 'Quidem sed eos incid', 1, '120', 1, '535.00', NULL, NULL, 'Non aspernatur tempo', 'Labore voluptas sequ', NULL, NULL, 1, 'AAbybDyvJ4qjwuCBPYQsk22EdQoj0eHpfJhHMzOY.jpeg', '2020-09-21 12:05:34', '2020-09-21 12:13:12'),
+(3, 'Nora Lindsey', 'Clinton Donovan', 'Ad aperiam similique', 'Quidem sed eos incid', 2, '120', 1, '535.00', NULL, NULL, 'Non aspernatur tempo', 'Labore voluptas sequ', NULL, NULL, 1, 'AAbybDyvJ4qjwuCBPYQsk22EdQoj0eHpfJhHMzOY.jpeg', '2020-09-21 12:05:34', '2020-09-21 12:13:12'),
+(4, 'Nora Lindsey', 'Clinton Donovan', 'Ad aperiam similique', 'Quidem sed eos incid', 2, '120', 1, '535.00', NULL, NULL, 'Non aspernatur tempo', 'Labore voluptas sequ', NULL, NULL, 1, 'AAbybDyvJ4qjwuCBPYQsk22EdQoj0eHpfJhHMzOY.jpeg', '2020-09-21 12:05:34', '2020-09-21 12:13:12'),
+(5, 'Nora Lindsey', 'Clinton Donovan', 'Ad aperiam similique', 'Quidem sed eos incid', 3, '120', 1, '535.00', NULL, NULL, 'Non aspernatur tempo', 'Labore voluptas sequ', NULL, NULL, 1, 'AAbybDyvJ4qjwuCBPYQsk22EdQoj0eHpfJhHMzOY.jpeg', '2020-09-21 12:05:34', '2020-09-21 12:13:12'),
+(6, 'Nora Lindsey', 'Clinton Donovan', 'Ad aperiam similique', 'Quidem sed eos incid', 3, '120', 1, '535.00', NULL, NULL, 'Non aspernatur tempo', 'Labore voluptas sequ', NULL, NULL, 1, 'AAbybDyvJ4qjwuCBPYQsk22EdQoj0eHpfJhHMzOY.jpeg', '2020-09-21 12:05:34', '2020-11-02 08:31:43');
 
 -- --------------------------------------------------------
 
@@ -302,6 +319,16 @@ CREATE TABLE `services` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Dumping data for table `services`
+--
+
+INSERT INTO `services` (`id`, `ar_title`, `en_title`, `ar_description`, `en_description`, `ar_meta_tag`, `en_meta_tag`, `image`, `created_at`, `updated_at`) VALUES
+(1, 'لقب الخدمه بالعربيه', 'english title', 'وصف الخدمه بالعربيه وصف الخدمه بالعربيه وصف الخدمه بالعربيه وصف الخدمه بالعربيه وصف الخدمه بالعربيه وصف الخدمه بالعربيه وصف الخدمه بالعربيه وصف الخدمه بالعربيه وصف الخدمه بالعربيه وصف الخدمه بالعربيه', 'english description english description english description english description english description english description english description english description english description english description english description', 'Lorem quia non Nam q', 'Laboris esse amet', 'U6i9bXxgLaLaHEvIkDS7Ve2HW69jmZlfttjqapX0.png', '2020-11-02 07:25:27', '2020-11-02 07:25:27'),
+(2, 'لقب الخدمه بالعربيه', 'english title', 'وصف الخدمه بالعربيه وصف الخدمه بالعربيه وصف الخدمه بالعربيه وصف الخدمه بالعربيه وصف الخدمه بالعربيه وصف الخدمه بالعربيه وصف الخدمه بالعربيه وصف الخدمه بالعربيه وصف الخدمه بالعربيه وصف الخدمه بالعربيه', 'english description english description english description english description english description english description english description english description english description english description english description', 'Lorem quia non Nam q', 'Laboris esse amet', 'U6i9bXxgLaLaHEvIkDS7Ve2HW69jmZlfttjqapX0.png', '2020-11-02 07:25:27', '2020-11-02 07:25:27'),
+(3, 'لقب الخدمه بالعربيه', 'english title', 'وصف الخدمه بالعربيه وصف الخدمه بالعربيه وصف الخدمه بالعربيه وصف الخدمه بالعربيه وصف الخدمه بالعربيه وصف الخدمه بالعربيه وصف الخدمه بالعربيه وصف الخدمه بالعربيه وصف الخدمه بالعربيه وصف الخدمه بالعربيه', 'english description english description english description english description english description english description english description english description english description english description english description', 'Lorem quia non Nam q', 'Laboris esse amet', 'U6i9bXxgLaLaHEvIkDS7Ve2HW69jmZlfttjqapX0.png', '2020-11-02 07:25:27', '2020-11-02 07:25:27'),
+(4, 'لقب الخدمه بالعربيه', 'english title', 'وصف الخدمه بالعربيه وصف الخدمه بالعربيه وصف الخدمه بالعربيه وصف الخدمه بالعربيه وصف الخدمه بالعربيه وصف الخدمه بالعربيه وصف الخدمه بالعربيه وصف الخدمه بالعربيه وصف الخدمه بالعربيه وصف الخدمه بالعربيه', 'english description english description english description english description english description english description english description english description english description english description english description', 'Lorem quia non Nam q', 'Laboris esse amet', 'U6i9bXxgLaLaHEvIkDS7Ve2HW69jmZlfttjqapX0.png', '2020-11-02 07:25:27', '2020-11-02 07:25:27');
+
 -- --------------------------------------------------------
 
 --
@@ -324,8 +351,8 @@ CREATE TABLE `sliders` (
 --
 
 INSERT INTO `sliders` (`id`, `ar_title`, `en_title`, `ar_description`, `en_description`, `image`, `created_at`, `updated_at`) VALUES
-(1, 'Irure excepteur corp', 'Cum animi placeat', 'Qui eaque vel sequi', 'Irure dolores atque', 'w9pxef2w3m5aOHctP6HLBXWXcrQ3nKnEbrYx2KuC.jpeg', '2020-09-21 15:12:17', '2020-09-21 15:12:17'),
-(2, 'Aliquid qui sint lo', 'Duis sequi et quisqu', 'Consectetur officia', 'Ut modi et ex conseq', 'MBT37V3JLgXEtVLYKxcahFRAqywzTDKo2qrtaJj0.jpeg', '2020-09-21 15:12:29', '2020-09-21 15:12:29');
+(1, 'لقب السلايدر بالعربيه', 'Cum animi placeat', 'وصف السلايدر بالعربيه وصف السلايدر بالعربيه وصف السلايدر بالعربيه وصف السلايدر بالعربيه وصف السلايدر بالعربيه وصف السلايدر بالعربيه وصف السلايدر بالعربيه وصف السلايدر بالعربيه وصف السلايدر بالعربيه وصف السلايدر بالعربيه', 'Irure dolores atque', 'w9pxef2w3m5aOHctP6HLBXWXcrQ3nKnEbrYx2KuC.jpeg', '2020-09-21 15:12:17', '2020-11-02 07:20:38'),
+(2, 'لقب السلايدر بالعربيه', 'Duis sequi et quisqu', 'وصف السلايدر بالعربيه وصف السلايدر بالعربيه وصف السلايدر بالعربيه وصف السلايدر بالعربيه وصف السلايدر بالعربيه وصف السلايدر بالعربيه وصف السلايدر بالعربيه وصف السلايدر بالعربيه وصف السلايدر بالعربيه وصف السلايدر بالعربيه', 'Ut modi et ex conseq', 'MBT37V3JLgXEtVLYKxcahFRAqywzTDKo2qrtaJj0.jpeg', '2020-09-21 15:12:29', '2020-09-21 15:12:29');
 
 -- --------------------------------------------------------
 
@@ -369,6 +396,16 @@ CREATE TABLE `team_members` (
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Dumping data for table `team_members`
+--
+
+INSERT INTO `team_members` (`id`, `ar_name`, `en_name`, `ar_title`, `en_title`, `ar_description`, `en_description`, `ar_meta_tag`, `en_meta_tag`, `image`, `created_at`, `updated_at`) VALUES
+(1, 'ألاسم بالعربيه', 'name in english', 'اللقب بالعربيه', 'title in english for team member', 'وصف بالعربيه لفريق العمل وصف بالعربيه لفريق العمل وصف بالعربيه لفريق العمل وصف بالعربيه لفريق العمل وصف بالعربيه لفريق العمل وصف بالعربيه لفريق العمل وصف بالعربيه لفريق العمل وصف بالعربيه لفريق العمل وصف بالعربيه لفريق العمل', 'english description english description english description english description english description english description english description english description english description english description english description english description english description english description', 'Lorem quia non Nam q', 'Laboris esse amet', 'gl947amS1t7BRnmiUvrjyNNkp8D2Fbazl1f6ejjm.jpeg', '2020-11-02 08:25:18', '2020-11-02 08:25:18'),
+(2, 'ألاسم بالعربيه', 'name in english', 'اللقب بالعربيه', 'title in english for team member', 'وصف بالعربيه لفريق العمل وصف بالعربيه لفريق العمل وصف بالعربيه لفريق العمل وصف بالعربيه لفريق العمل وصف بالعربيه لفريق العمل وصف بالعربيه لفريق العمل وصف بالعربيه لفريق العمل وصف بالعربيه لفريق العمل وصف بالعربيه لفريق العمل', 'english description english description english description english description english description english description english description english description english description english description english description english description english description english description', 'Lorem quia non Nam q', 'Laboris esse amet', 'gl947amS1t7BRnmiUvrjyNNkp8D2Fbazl1f6ejjm.jpeg', '2020-11-02 08:25:18', '2020-11-02 08:25:18'),
+(3, 'ألاسم بالعربيه', 'name in english', 'اللقب بالعربيه', 'title in english for team member', 'وصف بالعربيه لفريق العمل وصف بالعربيه لفريق العمل وصف بالعربيه لفريق العمل وصف بالعربيه لفريق العمل وصف بالعربيه لفريق العمل وصف بالعربيه لفريق العمل وصف بالعربيه لفريق العمل وصف بالعربيه لفريق العمل وصف بالعربيه لفريق العمل', 'english description english description english description english description english description english description english description english description english description english description english description english description english description english description', 'Lorem quia non Nam q', 'Laboris esse amet', 'gl947amS1t7BRnmiUvrjyNNkp8D2Fbazl1f6ejjm.jpeg', '2020-11-02 08:25:18', '2020-11-02 08:25:18'),
+(4, 'ألاسم بالعربيه', 'name in english', 'اللقب بالعربيه', 'title in english for team member', 'وصف بالعربيه لفريق العمل وصف بالعربيه لفريق العمل وصف بالعربيه لفريق العمل وصف بالعربيه لفريق العمل وصف بالعربيه لفريق العمل وصف بالعربيه لفريق العمل وصف بالعربيه لفريق العمل وصف بالعربيه لفريق العمل وصف بالعربيه لفريق العمل', 'english description english description english description english description english description english description english description english description english description english description english description english description english description english description', 'Lorem quia non Nam q', 'Laboris esse amet', 'gl947amS1t7BRnmiUvrjyNNkp8D2Fbazl1f6ejjm.jpeg', '2020-11-02 08:25:18', '2020-11-02 08:25:18');
+
 -- --------------------------------------------------------
 
 --
@@ -389,6 +426,16 @@ CREATE TABLE `testimonials` (
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `testimonials`
+--
+
+INSERT INTO `testimonials` (`id`, `ar_name`, `en_name`, `ar_title`, `en_title`, `ar_description`, `en_description`, `ar_meta_tag`, `en_meta_tag`, `image`, `created_at`, `updated_at`) VALUES
+(1, 'ألاسم بالعربيه', 'name in english', 'اللقب بالعربيه للمراجعه', 'title in english for testimonials', 'الوصف بالعربيه للمراجعه الوصف بالعربيه للمراجعه الوصف بالعربيه للمراجعه الوصف بالعربيه للمراجعه الوصف بالعربيه للمراجعه الوصف بالعربيه للمراجعه الوصف بالعربيه للمراجعه الوصف بالعربيه للمراجعه الوصف بالعربيه للمراجعه الوصف بالعربيه للمراجعه', 'english description english description english description english description english description english description english description english description english description english description english description english description english description', 'Lorem quia non Nam q', 'Laboris esse amet', 'ADHuNydeXiXWAlqwjuaAal6xcDvJCOFVHDuTISrt.jpeg', '2020-11-02 08:22:31', '2020-11-02 08:22:31'),
+(2, 'ألاسم بالعربيه', 'name in english', 'اللقب بالعربيه للمراجعه', 'title in english for testimonials', 'الوصف بالعربيه للمراجعه الوصف بالعربيه للمراجعه الوصف بالعربيه للمراجعه الوصف بالعربيه للمراجعه الوصف بالعربيه للمراجعه الوصف بالعربيه للمراجعه الوصف بالعربيه للمراجعه الوصف بالعربيه للمراجعه الوصف بالعربيه للمراجعه الوصف بالعربيه للمراجعه', 'english description english description english description english description english description english description english description english description english description english description english description english description english description', 'Lorem quia non Nam q', 'Laboris esse amet', 'ADHuNydeXiXWAlqwjuaAal6xcDvJCOFVHDuTISrt.jpeg', '2020-11-02 08:22:31', '2020-11-02 08:22:31'),
+(3, 'ألاسم بالعربيه', 'name in english', 'اللقب بالعربيه للمراجعه', 'title in english for testimonials', 'الوصف بالعربيه للمراجعه الوصف بالعربيه للمراجعه الوصف بالعربيه للمراجعه الوصف بالعربيه للمراجعه الوصف بالعربيه للمراجعه الوصف بالعربيه للمراجعه الوصف بالعربيه للمراجعه الوصف بالعربيه للمراجعه الوصف بالعربيه للمراجعه الوصف بالعربيه للمراجعه', 'english description english description english description english description english description english description english description english description english description english description english description english description english description', 'Lorem quia non Nam q', 'Laboris esse amet', 'ADHuNydeXiXWAlqwjuaAal6xcDvJCOFVHDuTISrt.jpeg', '2020-11-02 08:22:31', '2020-11-02 08:22:31'),
+(4, 'ألاسم بالعربيه', 'name in english', 'اللقب بالعربيه للمراجعه', 'title in english for testimonials', 'الوصف بالعربيه للمراجعه الوصف بالعربيه للمراجعه الوصف بالعربيه للمراجعه الوصف بالعربيه للمراجعه الوصف بالعربيه للمراجعه الوصف بالعربيه للمراجعه الوصف بالعربيه للمراجعه الوصف بالعربيه للمراجعه الوصف بالعربيه للمراجعه الوصف بالعربيه للمراجعه', 'english description english description english description english description english description english description english description english description english description english description english description english description english description', 'Lorem quia non Nam q', 'Laboris esse amet', 'ADHuNydeXiXWAlqwjuaAal6xcDvJCOFVHDuTISrt.jpeg', '2020-11-02 08:22:31', '2020-11-02 08:22:31');
 
 -- --------------------------------------------------------
 
@@ -464,7 +511,13 @@ CREATE TABLE `visitors` (
 
 INSERT INTO `visitors` (`id`, `ip`, `page`, `created_at`, `updated_at`) VALUES
 (1, '127.0.0.1', 'home', '2020-09-21 12:50:37', '2020-09-21 12:50:37'),
-(2, '127.0.0.1', 'home', '2020-09-27 10:51:19', '2020-09-27 10:51:19');
+(2, '127.0.0.1', 'home', '2020-09-27 10:51:19', '2020-09-27 10:51:19'),
+(3, '127.0.0.1', 'home', '2020-11-01 14:36:18', '2020-11-01 14:36:18'),
+(4, '127.0.0.1', 'home', '2020-11-02 07:19:07', '2020-11-02 07:19:07'),
+(5, '127.0.0.1', 'services', '2020-11-02 08:44:03', '2020-11-02 08:44:03'),
+(6, '127.0.0.1', 'blogs', '2020-11-02 09:01:05', '2020-11-02 09:01:05'),
+(7, '127.0.0.1', 'about', '2020-11-02 09:01:10', '2020-11-02 09:01:10'),
+(8, '127.0.0.1', 'contact-us', '2020-11-02 09:01:53', '2020-11-02 09:01:53');
 
 -- --------------------------------------------------------
 
@@ -629,7 +682,7 @@ ALTER TABLE `abouts`
 -- AUTO_INCREMENT for table `blogs`
 --
 ALTER TABLE `blogs`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `contacts`
@@ -671,7 +724,7 @@ ALTER TABLE `other_data`
 -- AUTO_INCREMENT for table `projects`
 --
 ALTER TABLE `projects`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `properties`
@@ -689,7 +742,7 @@ ALTER TABLE `property_images`
 -- AUTO_INCREMENT for table `services`
 --
 ALTER TABLE `services`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `sliders`
@@ -707,13 +760,13 @@ ALTER TABLE `states`
 -- AUTO_INCREMENT for table `team_members`
 --
 ALTER TABLE `team_members`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `testimonials`
 --
 ALTER TABLE `testimonials`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `themes`
@@ -731,7 +784,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `visitors`
 --
 ALTER TABLE `visitors`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `website_settings`
